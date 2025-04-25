@@ -1,8 +1,14 @@
 # Claude GitHub Integration 🤖 💻
 
+<div align="center">
+  
 ![GitHub](https://img.shields.io/badge/github-integration-blue)
 ![MCP](https://img.shields.io/badge/MCP-enabled-green)
 ![Anthropic](https://img.shields.io/badge/Claude-assistant-purple)
+
+*Documentation for using Claude with GitHub via Model Context Protocol (MCP)*
+
+</div>
 
 ## Overview
 
@@ -19,6 +25,8 @@ Claude, create a new file called example.md in my repository with the following 
 [Your content here]
 ```
 
+For more detailed setup instructions, see the [Getting Started Guide](docs/getting-started.md).
+
 ## 📋 Available Operations
 
 | Category | Operations |
@@ -28,6 +36,20 @@ Claude, create a new file called example.md in my repository with the following 
 | Pull Requests | Create, review, merge PRs |
 | Issues | Create, update, comment on issues |
 | Code Analysis | Review code, suggest improvements |
+
+## 📚 Documentation
+
+For detailed documentation, see the following sections:
+
+- [Getting Started](docs/getting-started.md): Initial setup and configuration
+- [Authentication](docs/authentication.md): How authentication works with github-mcp-server
+- [File Operations](docs/operations/files.md): Creating, reading, and updating files
+
+## 🚩 Templates
+
+To help you get started, we've provided templates for common operations:
+
+- [Create File Template](templates/prompts/create-file.md): Templates for creating new files
 
 ## 🔄 Integration Architecture
 
@@ -44,15 +66,19 @@ graph TD
 
 ## 🔑 Authentication & Security
 
-The github-mcp-server securely connects Claude to GitHub using your credentials. No credentials are exposed in the conversation.
+The github-mcp-server securely connects Claude to GitHub using your credentials. No credentials are exposed in the conversation. For more details on security considerations, see the [Authentication](docs/authentication.md) documentation.
 
-## 📚 Documentation
+## 🔧 Example Use Cases
 
-More detailed documentation coming soon!
+- **Documentation**: Create and update READMEs, wikis, and other documentation
+- **Code Management**: Create files, update code, manage repositories
+- **Code Analysis**: Review code for improvements and issues
+- **Issue Management**: Create and manage GitHub issues
+- **Repository Setup**: Initialize new projects with standard structures
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 📄 License
 
